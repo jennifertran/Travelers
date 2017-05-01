@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="comp3350.travelers">
+    package="com.travelers">
 
     <application
         android:allowBackup="true"
@@ -9,26 +9,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".presentation.MainActivity"
+            android:name="com.travelers.presentation.MainActivity"
             android:label="Travelers"></activity>
         <activity
-            android:name=".presentation.FlightList"
-            android:parentActivityName=".presentation.FlightForm" />
+            android:name="com.travelers.presentation.FlightList"
+            android:parentActivityName="com.travelers.presentation.FlightForm" />
         <activity
-            android:name=".presentation.FlightForm"
-            android:parentActivityName=".presentation.MainActivity" />
+            android:name="com.travelers.presentation.FlightForm"
+            android:parentActivityName="com.travelers.presentation.MainActivity" />
         <activity
-            android:name=".presentation.Summary"
-            android:parentActivityName=".presentation.FlightList" />
+            android:name="com.travelers.presentation.Summary"
+            android:parentActivityName="com.travelers.presentation.FlightList" />
         <activity
-            android:name=".presentation.Payment"
-            android:parentActivityName=".presentation.Summary"></activity>
+            android:name="com.travelers.presentation.Payment"
+            android:parentActivityName="com.travelers.presentation.Summary"></activity>
         <activity
-            android:name=".presentation.ThankYou"
-            android:parentActivityName=".presentation.Payment"></activity>
+            android:name="com.travelers.presentation.ThankYou"
+            android:parentActivityName="com.travelers.presentation.Payment"></activity>
 
         <activity
-            android:name=".presentation.SplashActivity"
+            android:name="com.travelers.presentation.SplashActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
