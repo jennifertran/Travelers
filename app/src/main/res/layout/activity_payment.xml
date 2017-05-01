@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="comp3350.travelers.presentation.Payment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paymentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="@string/paymentTitle"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="36sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="238dp"
+                tools:targetApi="jelly_bean" />
+
+            <TextView
+                android:id="@+id/customerHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="@string/customer"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="238dp"
+                tools:targetApi="jelly_bean" />
+
+            <!-- First Name -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/firstNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center_horizontal"
+                    android:text="@string/firstName"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/fNameHint"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <!-- Last Name -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/lastNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lastName"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/lNameHint"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <!-- Email Address -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/emailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center_horizontal"
+                    android:text="@string/emailTitle"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/emailForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/emailHint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <!-- Phone Number -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center_horizontal"
+                    android:text="@string/phoneNum"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/phoneForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/phoneEx"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/billing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="@string/billing"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="238dp"
+                tools:targetApi="jelly_bean" />
+
+            <!-- Card Type -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/typeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cardType"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/typeForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/typeHint"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <!-- Credit Card Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/infoText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center_horizontal"
+                    android:text="@string/infoTitle"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/infoForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/infoHint"
+                    android:inputType=""
+                    android:maxLength="19"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <!-- Expiry Date & CVV-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/expText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.67"
+                    android:gravity="center_horizontal"
+                    android:text="@string/expTitle"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/expForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.57"
+                    android:ems="10"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/expHint"
+                    android:inputType="date"
+                    android:maxLength="7"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/cvvText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.43"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cvvTitle"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/cvvForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.49"
+                    android:ems="10"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/cvvHint"
+                    android:inputType=""
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <!-- Name on Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center_horizontal"
+                    android:text="@string/nameCard"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/nameForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="left|center_horizontal"
+                    android:hint="@string/nameHint"
+                    android:inputType=""
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SummaryConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_red_dark"
+                android:elevation="23dp"
+                android:fontFamily="sans-serif"
+                android:onClick="confirmOnClick"
+                android:text="@string/confirm"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:targetApi="jelly_bean" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

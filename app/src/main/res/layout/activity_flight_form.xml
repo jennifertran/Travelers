@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_flight_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="comp3350.travelers.presentation.FlightForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/FlightForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="monospace"
+            android:text="@string/flight_information"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="36sp"
+            android:textStyle="normal|bold"
+            tools:targetApi="jelly_bean" />
+
+        <!-- From Form -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/fromText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center_horizontal"
+                android:text="@string/from"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/fromForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_horizontal"
+                android:hint="eg. Winnipeg"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <!-- To Form -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/toText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center_horizontal"
+                android:text="@string/to"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/toForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_horizontal"
+                android:hint="eg. Vancouver"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <!-- Departure Form -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/deptText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center_horizontal"
+                android:text="@string/deptTitle"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/deptDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_horizontal"
+                android:hint="@string/mm_dd_yyyy"
+                android:inputType="date"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/adultText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center_horizontal"
+                android:text="@string/adults"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/numAdults"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_horizontal"
+                android:hint="eg. 1"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/childText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center_horizontal"
+                android:text="@string/children"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/numChildren"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_horizontal"
+                android:hint="eg. 0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/bagText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center_horizontal"
+                android:text="@string/baggage"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/numBags"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_horizontal"
+                android:hint="eg. 1"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/FlightConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="79dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="110dp"
+                android:layout_weight="1.05"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="confirmOnClick"
+                android:text="@string/confirm"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="?attr/actionMenuTextColor"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:targetApi="jelly_bean" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

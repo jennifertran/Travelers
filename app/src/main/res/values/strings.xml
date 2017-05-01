@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Main Page -->
+    <string name="app_name">Travelers</string>
+    <string name="flights">Flights</string>
+    <string name="hotels">Hotels</string>
+    <string name="cars">Cars</string>
+    <string name="car_rentals">Car Rentals</string>
+    <string name="Slogan">Shop here for the best traveling deals!</string>
+
+    <!-- Flight Form -->
+    <string name="confirm">CONFIRM</string>
+    <string name="Checkout">CHECKOUT</string>
+    <string name="adults">Adults:</string>
+    <string name="children">Children:</string>
+    <string name="departure_date">Departure Date:</string>
+    <string name="flight_information">Search for Flights</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="baggage">Baggage:</string>
+    <string name="deptTitle">Departure Date:</string>
+    <string name="bags">Bags:</string>
+    <string name="mm_dd_yyyy">MM/DD/YYYY</string>
+    <string name="vancouver">Vancouver</string>
+    <string name="winnipeg">Winnipeg</string>
+
+    <!-- Trip Summary -->
+    <string name="tripSummary">Trip Summary</string>
+
+    <!-- Payment Page -->
+    <string name="paymentTitle">Payment Information</string>
+    <string name="firstName">First Name:</string>
+    <string name="fNameHint">eg. John</string>
+    <string name="lastName">Last Name:</string>
+    <string name="lNameHint">eg. Doe</string>
+    <string name="emailTitle">Email:</string>
+    <string name="emailHint">eg. JohnDoe@email.com</string>
+    <string name="phoneNum">Phone Number:</string>
+    <string name="phoneEx">eg. 222-222-2222</string>
+    <string name="customer">Customer Info</string>
+
+    <string name="billing">Billing Info</string>
+    <string name="cardType">Card Type:</string>
+    <string name="typeHint">eg. Visa</string>
+    <string name="infoTitle">Card Number:</string>
+    <string name="infoHint">eg. 1234-5678-1234-3345</string>
+    <string name="expTitle">Expiry Date:</string>
+    <string name="expHint">MM/YYYY</string>
+    <string name="cvvTitle">CVV:</string>
+    <string name="cvvHint">XXX</string>
+    <string name="nameCard">Name on card:</string>
+    <string name="nameHint">John Smith Doe</string>
+
+
+    <!-- Thank you Page -->
+    <string name="thankYou">Thank you for shopping with Travelers!</string>
+    <string name="email">Your confirmation email will arrive shortly.</string>
+    <string name="totalPrice">Total price: \n (includes fees &amp; taxes)</string>
+
+    <!-- Message Page -->
+    <string name="fatalError">Fatal error</string>
+    <string name="warning">Warning</string>
+
+</resources>

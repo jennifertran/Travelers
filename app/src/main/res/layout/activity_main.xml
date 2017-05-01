@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="comp3350.travelers.presentation.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <Button
+            android:id="@+id/FlightFormButton"
+            android:layout_width="558dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="2.08"
+            android:background="@drawable/flightimage"
+            android:fontFamily="monospace"
+            android:onClick="flightFormOnClick"
+            android:text="@string/flights"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="normal|bold"
+            android:typeface="sans"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/HotelFormButton"
+            android:layout_width="558dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="4.08"
+            android:alpha="0.4"
+            android:background="@drawable/hotelimage"
+            android:fontFamily="monospace"
+            android:onClick="hotelFormOnClick"
+            android:text="@string/hotels"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/CarFormButton"
+            android:layout_width="558dp"
+            android:layout_height="230dp"
+            android:layout_weight="4.08"
+            android:alpha="0.4"
+            android:background="@drawable/carimage"
+            android:fontFamily="monospace"
+            android:onClick="carFormOnClick"
+            android:text="@string/car_rentals"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
